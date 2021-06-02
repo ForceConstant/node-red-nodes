@@ -21,7 +21,7 @@ module.exports = function(RED) {
             var getFeed = function() {
                 var req = request(node.url, {timeout:10000, pool:false});
                 //req.setMaxListeners(50);
-                req.setHeader('user-agent', 'Mozilla/5.0 (Node-RED)');
+                req.setHeader('user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36');
                 req.setHeader('accept', 'application/rss+xml,text/html,application/xhtml+xml');
 
                 var feedparser = new FeedParser();
